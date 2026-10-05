@@ -113,3 +113,8 @@ In [`src/selfrag/score.py`](src/selfrag/score.py#L10), `evaluate(answer, gold, c
 Its result is defined by:
 
 - `{'faithfulness': round(faithfulness, 4), 'correctness': round(correctness, 4), 'passed': faithfulness >= 0.5 and correctness >= 0.5}`
+
+## Request flow diagram
+
+The mermaid decision tree for `POST /evaluate` is in [docs/PROCESS_FLOW.md](docs/PROCESS_FLOW.md). Use it in interviews to walk hold/refuse/422 vs a successful lab response without implying a production side effect.
+
